@@ -1,0 +1,8 @@
+
+
+order of writing text to console
+typewriter effect -> chalk color -> text wrap
+
+await t.wr(`${chalk.color(t.textWrap("message"))}`)
+
+

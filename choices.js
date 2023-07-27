@@ -3,7 +3,7 @@ import chalk from 'chalk';
 import inquirer from 'inquirer';
 import gradient from 'gradient-string';
 
-import * as t from './time.js';
+import * as t from './text.js';
 
 export async function choice1() {
     const answers = await inquirer.prompt({

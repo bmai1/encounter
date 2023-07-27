@@ -1,0 +1,10 @@
+npm init -y
+npm i chalk figlet gradient-string inquirer linebyline
+• chalk - colors output text in terminal
+• figlet - ascii text art
+• gradient-string - gradient color terminal text
+• inquirer user input management
+
+package.json -> "type": "module"
+    - ESM modules (import syntax instead of CommonJS require)
+shebang #! to access local node version
