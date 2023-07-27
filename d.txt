@@ -1,0 +1,9 @@
+npm init -y
+npm i chalk chalk-animation figlet gradient-string inquirer
+• chalk - colors output text in terminal
+• figlet - ascii text art
+
+
+package.json -> "type": "module"
+    - ESM modules (import instead of CommonJS require)
+add shebang #! when writing cl script for others
