@@ -59,20 +59,30 @@ await welcome() // top level await req. node 14+
 await askName()
 await t.wr(
     `${chalk.white(t.textWrap(`
-    As her eyes fell upon the moonlit stairwell at the end of the hallway, Naomi couldn’t help but notice the shred of apprehension lurking in the back of her mind, prowling for an opportunity to fully spread its wings.`))}
-`);
+    As her eyes fell upon the moonlit stairwell at the end of the hallway, Naomi couldn’t help but acknowledge the shred of apprehension lurking in the back of her mind, prowling for an opportunity to fully spread its wings.`))}
+    `
+);
 
 await t.wr(
-    `${chalk.cyan.italic('Now is not the right time to be in doubt,')} ${chalk.white('she chided herself.\n\n')}`
-)
+    `
+    ${chalk.cyan.italic('Now\'s not the right time to hesitate,')} ${chalk.white('she chided herself.\n')}
+    `
+);
 
-console.log('Press any key to continue\n');
+process.stdout.write('Press any key to continue');
 await waitForKeypress();
 
+await t.wr(`
+    ${chalk.white(t.textWrap(`
+    One foot came after the next, ${chalk.magenta.italic('plink, plink, plink,')} The sound was somewhat unnerving, resonating out with every stride, echoing into the abyss before falling into frosty silence. Adorning the walls were countless picture frames containing sentimental snapshots of the mansion’s past residents. It was as if the smiling portraits were mocking her, challenging her to call out their collective absence of human empathy.
+    `))}
+    `
+);
+
 await t.wr(
-    `${chalk.white(t.textWrap(`One foot came after the next,  ${chalk.red.italic('plink, plink, plink,')} and she began her careful ascent up the smooth marble steps. It was uncanny; a beautiful sound resonated out with every stride, yet the echo was inevitably doomed to be lost in the abyss. Adorning the walls, Naomi noticed, were countless picture frames containing sentimental fragments of memories belonging to the mansion’s past residents. The smiling portraits felt oddly disconnected and unfeeling, as if their owners were challenging her to call out their collective absence of human emotion. \n\n
-    `)
-    )}`
-)
+  `
+  ${chalk.red.bold(t.textWrap('Filthy little maggots.\n\n'))}
+  `
+);
 
 await c.choice1()
