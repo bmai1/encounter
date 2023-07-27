@@ -59,14 +59,14 @@ await welcome() // top level await req. node 14+
 await askName()
 await t.wr(
     `${chalk.white(t.textWrap(`
-    As her eyes fell upon the moonlit stairwell at the end of the hallway, Naomi couldn’t help but notice the shred of apprehension lurking in the back of her mind, prowling for an opportunity to fully spread its wings.
-    ${chalk.cyan.italic('Now is not the right time to be in doubt')}, she chided herself.\n\n
-    `)
-    )}`
-);
+    As her eyes fell upon the moonlit stairwell at the end of the hallway, Naomi couldn’t help but notice the shred of apprehension lurking in the back of her mind, prowling for an opportunity to fully spread its wings.`))}
+`);
 
-console.log('Press any key to continue');
-console.log('\n');
+await t.wr(
+    `${chalk.cyan.italic('Now is not the right time to be in doubt,')} ${chalk.white('she chided herself.\n\n')}`
+)
+
+console.log('Press any key to continue\n');
 await waitForKeypress();
 
 await t.wr(
